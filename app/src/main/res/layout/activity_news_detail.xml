@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljt.seefood.ui.NewsDetailActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <WebView
+           android:id="@+id/webView_news_detail"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scrollbars="none"
+           />
+        <LinearLayout
+            android:id="@+id/AdLinearLayout"
+            android:layout_below="@id/webView_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
